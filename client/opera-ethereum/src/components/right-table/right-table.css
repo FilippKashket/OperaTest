@@ -1,0 +1,14 @@
+.My-col {
+    overflow-y: scroll;
+    max-height: 45rem;
+}
+
+.My-div {
+    overflow-x:hidden; 
+    text-overflow: ellipsis;
+}
+
+.My-span {
+    font-weight: bold;
+    color: black;
+}

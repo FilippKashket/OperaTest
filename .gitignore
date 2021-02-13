@@ -1,0 +1,28 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+client/opera-ethereum/node_modules
+client/opera-ethereum/.pnp
+client/opera-ethereum/.pnp.js
+
+# testing
+client/opera-ethereum/coverage
+
+# production
+client/opera-ethereum/build
+
+# misc
+client/opera-ethereum/.DS_Store
+client/opera-ethereum/.env.local
+client/opera-ethereum/.env.development.local
+client/opera-ethereum/.env.test.local
+client/opera-ethereum/.env.production.local
+
+client/opera-ethereum/npm-debug.log*
+client/opera-ethereum/yarn-debug.log*
+client/opera-ethereum/yarn-error.log*
+
+# server
+server/.idea/
+server/__pycache__
+server/venv
