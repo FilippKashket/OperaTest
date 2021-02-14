@@ -6,15 +6,15 @@ Server is based on Python. Look deatils in [README.md](https://github.com/Filipp
 
 Client is based in React JS. Look details in [README.md](https://github.com/FilippKashket/OperaTest/blob/main/client/opera-ethereum/README.md)
 
-WARNINGS:
+# WARNINGS:
 
-# there is some strange bugs in https://cloudflare-eth.com 
+## there is some strange bugs in https://cloudflare-eth.com 
 
 when I reques exact number but get another in response.
 
 latest number update quite slowly, so I can get latest one when where is more latest.
 
-# there is one warning in code.
+## there is one warning in code.
 
 Warning: findDOMNode is deprecated in StrictMode. findDOMNode was passed an instance of Transition which is inside StrictMode. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here
 
