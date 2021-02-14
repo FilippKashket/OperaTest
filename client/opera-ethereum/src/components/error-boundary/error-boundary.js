@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+// Class for catching errors in renders elements
 class ErrorBoundary extends Component {
     
     state = { error: null, errorInfo: null };
@@ -32,6 +33,8 @@ class ErrorBoundary extends Component {
     }  
   }
 
+
+  // Make hight order componemt. It is convinient for wrap our elements
   const WithErrorBoundary = (ChildComponent)=>{
       return((props)=>
           <ErrorBoundary>

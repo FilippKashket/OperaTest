@@ -1,3 +1,5 @@
+# You can use npm instead of yarn
+
 # Before start
 
 ### `yarn install` to ensure all deps are downloaded.
@@ -9,6 +11,13 @@
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+# There are some 'Jest' test in this app
+
+### `yarn test`
+
+Launches the test runner in the interactive watch mode.\
+
+# Standart description
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

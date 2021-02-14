@@ -1,6 +1,6 @@
 # Test Assignment for Opera compamy
 
-There is description in [Frotend.md](https://github.com/FilippKashket/OperaTest/blob/main/frontend.md)
+There is task description in [Frotend.md](https://github.com/FilippKashket/OperaTest/blob/main/frontend.md)
 
 Server is based on Python. Look deatils in [README.md](https://github.com/FilippKashket/OperaTest/blob/main/server/README.md)
 
@@ -11,6 +11,8 @@ Client is based in React JS. Look details in [README.md](https://github.com/Fili
 ## there is some strange bugs in https://cloudflare-eth.com 
 
 when I reques exact number but get another in response.
+
+![screeshot](https://github.com/FilippKashket/OperaTest/blob/main/error_cloudflare.png) 
 
 latest number update quite slowly, so I can get latest one when where is more latest.
 

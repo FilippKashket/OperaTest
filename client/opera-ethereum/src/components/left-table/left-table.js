@@ -83,6 +83,12 @@ const LeftTable = (props) => {
       if(value.length < 2) {
         return;
       } 
+
+      if(value.length > 66) {
+        setValidationError({show:true,message:"Plesae, use only 64 symbols"}); 
+        return;
+      }
+
       const result = /^0[xX][0-9a-f]*$/.test(value)
 
       if (!result) {
