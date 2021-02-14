@@ -75,7 +75,6 @@ const LeftTable = (props) => {
     const [invalidValidation, setValidationError] = useState({show:false,message:""});
     //this constracions needs for Overlay which hides in Warning 
     const target = useRef();
-
     const isNext = useNext(number);
 
     //function for validation value in the input field
