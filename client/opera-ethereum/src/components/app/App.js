@@ -11,7 +11,7 @@ import LeftTable from '../left-table';
 import RightTable from '../right-table';
 import ErrorHeader from '../error-header';
 
-import getBlockByNumber from '../../services/etherium-api';
+import {getBlockByNumber} from '../../services/etherium-api';
 
 // Hook for getting data from server
 const useRequest = (request) => {
@@ -93,8 +93,7 @@ function App() {
 
   //main page has two colomns and header for errors
   return (
-    
-      <Jumbotron id='app'>
+      <Jumbotron id='app' className="App">
         <Container fluid>
           {error.isError?
                           <ErrorHeader message={error.message}/>

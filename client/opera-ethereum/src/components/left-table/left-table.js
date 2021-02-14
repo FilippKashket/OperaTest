@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
 
 import Warning from '../warning';
-import getBlockByNumber from '../../services/etherium-api';
+import {existNumber} from '../../services/etherium-api';
 import WithErrorBoundary from '../error-boundary';
 
 import './left-table.css';
@@ -16,7 +16,7 @@ const useNext = (number) => {
 
   useEffect(() => {
     const next_number = '0x'+(+number+1).toString(16);
-    getBlockByNumber(next_number).then(({result})=>result?setIsNext(true):setIsNext(false));
+    existNumber(next_number).then(({result})=> result?setIsNext(true):setIsNext(false));
   }, [number]);
   return isNext;
 };

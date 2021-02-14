@@ -25,19 +25,6 @@ it('can render RightTable with empty notifications', () => {
   const span = container.querySelector('span'); 
   expect(span.textContent).toBe('No transactions');
 
-
-
-//   const button = container.querySelector('button');
-//   const label = container.querySelector('p');
-//   expect(label.textContent).toBe('You clicked 0 times');
-//   expect(document.title).toBe('You clicked 0 times');
-
-  // Test second render and componentDidUpdate
-//   act(() => {
-//     button.dispatchEvent(new MouseEvent('click', {bubbles: true}));
-//   });
-//   expect(label.textContent).toBe('You clicked 1 times');
-//   expect(document.title).toBe('You clicked 1 times');
 });
 
 it('can render RightTable with notifications', () => {

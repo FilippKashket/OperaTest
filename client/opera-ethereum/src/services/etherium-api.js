@@ -19,4 +19,10 @@ const getBlockByNumber = async (number) => {
     return result;
 };
 
-export default getBlockByNumber;
+// function for getting exact block
+const existNumber = async (number) => {
+    const  result = await getResource(`block_exist/${number}`);
+    return result;
+};
+
+export {getBlockByNumber, existNumber};
