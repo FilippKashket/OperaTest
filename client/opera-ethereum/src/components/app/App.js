@@ -41,6 +41,7 @@ const useRequest = (request) => {
                                                           if ('result' in res){
                                                               // if there is result but it is null, we got nothing
                                                               if(res.result) {
+                                                                        
                                                                           setDataState({
                                                                             block: res.result,
                                                                             error: {isError:false, message: ''},
@@ -100,7 +101,7 @@ function App() {
                           :undefined
                           }
           <Row>
-            <Col><LeftTable {...block} setBlockNumber={setBlockNumber} loading={loading}/></Col>
+            <Col><LeftTable {...block} number_block={block_number} setBlockNumber={setBlockNumber} loading={loading}/></Col>
             <Col><RightTable {...block} loading={loading}/></Col>
           </Row>
         </Container>

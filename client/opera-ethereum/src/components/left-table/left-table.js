@@ -67,7 +67,7 @@ const NumberBlock = ({swithcNumber, number, disabled }) => {
 // Left part of main page
 const LeftTable = (props) => {
     // get data from main component
-    const {number, hash, setBlockNumber, loading} = props;
+    const {number, hash, setBlockNumber, loading, number_block} = props;
     // set tanplate for current number in the input field
     const [currentNumber, setCurrentNumber] = useState("0x");
 
@@ -107,6 +107,10 @@ const LeftTable = (props) => {
 
     // there are form with three filds and button submit
     // if value incorrect we show warning 
+    // I change number={number} to number={number_block==='latest'?number:number_block} because of strange server bug.
+    // often when I send request I get response with another number. So It's better to show number what we sent instead of
+    // what we got, because in this case we can't get next or previouse because we will get the same number every time.
+
     return (
         <div>
             <h1>Current block</h1>
@@ -120,7 +124,7 @@ const LeftTable = (props) => {
               {loading?
                 <Spinner animation="border" />:
                 <div>
-                  <NumberBlock swithcNumber={swithcNumber} number={number} disabled ={!isNext}/>
+                  <NumberBlock swithcNumber={swithcNumber} number={number_block==='latest'?number:number_block} disabled ={!isNext}/>
                   <FormItems label="Hash" value={hash}/>
                 </div>
               }
