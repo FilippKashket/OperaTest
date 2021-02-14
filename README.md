@@ -10,9 +10,9 @@ WARNINGS:
 
 # there is some strange bugs in https://cloudflare-eth.com 
 
-## when I reques exact number but get another in response.
+when I reques exact number but get another in response.
 
-## latest number update quite slowly, so I can get latest one when where is more latest.
+latest number update quite slowly, so I can get latest one when where is more latest.
 
 # there is one warning in code.
 
