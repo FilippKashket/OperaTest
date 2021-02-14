@@ -8,7 +8,7 @@ Client is based in React JS. Look details in [README.md](https://github.com/Fili
 
 # WARNINGS:
 
-## there is some strange bugs in https://cloudflare-eth.com 
+## there are some strange bugs in https://cloudflare-eth.com 
 
 when I reques exact number but get another in response.
 

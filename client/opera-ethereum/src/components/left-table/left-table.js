@@ -84,7 +84,7 @@ const LeftTable = (props) => {
         return;
       } 
 
-      if(value.length > 66) {
+      if(value.length > 18) {
         setValidationError({show:true,message:"Plesae, use only 64 symbols"}); 
         return;
       }

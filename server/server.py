@@ -18,9 +18,9 @@ def hello_world():
 # Get exact block
 @app.route("/api/block/<block_num>", methods=['GET'])
 def get_block(block_num):
-    print(block_num)
     request_data = dict(jsonrpc="2.0", method="eth_getBlockByNumber", params=[block_num, True], id=1)
-    r = requests.post('https://cloudflare-eth.com', json=request_data)
+    r = requests.post('https://cloudflare-eth.com', json=request_data,
+                      headers={"Content-Type": "application/json"})
     r_data = r.json()
 
     return r_data
@@ -31,7 +31,8 @@ def get_block(block_num):
 def exist_block(block_num):
     print(block_num)
     request_data = dict(jsonrpc="2.0", method="eth_getBlockByNumber", params=[block_num, False], id=1)
-    r = requests.post('https://cloudflare-eth.com', json=request_data)
+    r = requests.post('https://cloudflare-eth.com', json=request_data,
+                      headers={"Content-Type": "application/json"})
     r_data = r.json()
     print(r_data)
     return r_data
