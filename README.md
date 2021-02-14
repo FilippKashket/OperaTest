@@ -22,5 +22,5 @@ Warning: findDOMNode is deprecated in StrictMode. findDOMNode was passed an inst
 
 I think it's because something in standart bootstrap Overlay.
 
-If you don't like see it you will be able to turn off the React strict mode in Index.js
+If you don't like see it you could turn off the React strict mode in Index.js
 
